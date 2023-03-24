@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/css.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Form CRUD</title>
+  </head>
+  <body>
+    <!-- content form -->
+    <main class="main">
+      <section class="section">
+        <form class="section__form" id="form">
+            <section class="table__header">
+                <h2 class="form__title">Agregar Producto</h2>
+            </section>
+          
+
+          <label class="form__label" for="name">Nombre del Producto</label>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ingrese el nombre del Producto"
+            required
+          />
+
+          <label class="form__label" for="price">Precio</label>
+          <input
+            class="form__input"
+            type="number"
+            name="price"
+            id="price"
+            placeholder="Ingrese el Precio del Producto"
+            required
+          />
+
+          <label class="form__label" for="quantity">Cantidad</label>
+          <input
+            class="form__input"
+            type="number"
+            name="quantity"
+            id="quantity"
+            placeholder="Ingrese Cantidad de productos"
+            required
+          />
+
+          <label class="form__label" for="category">Categoria</label>
+          <input
+            class="form__input"
+            type="text"
+            name="category"
+            id="category"
+            placeholder="Ingrese Categoria del producto"
+            required
+          />
+
+          <section class="section__buttons">
+            <button
+              class="form__submit"
+              type="button"
+              onclick="datas();"
+              id="enviar"
+            >
+              Enviar
+            </button>
+          </section>
+          <section class="button__update"></section>
+        </form>
+      </section>
+
+      <!-- content table product -->
+      <section class="section__products">
+        <br />
+        <table id="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre del Producto</th>
+              <th>Precio del Producto</th>
+              <th>Cantidad</th>
+              <th>Categoria</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody class="product__list">
+            <tr> </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./static/js/scripts.js"></script>
+  </body>
+</html>

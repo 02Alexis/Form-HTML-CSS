@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;background-color: #1d2639;
+    justify-content: center;
+    align-items: center;font-family: 'Poppins', sans-serif;
+}
+.table__header{
+    color: #ccc;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 25px;
+    background-color: #fff4;
+    border-radius: .4rem;
+    padding: .8rem 1rem;
+}
+.section__form{
+    color: #ccc;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+.section__form .form__input{
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .table{
+    width: 82vw;
+    /* height: 90vh; */
+    background-color: #fff5;
+    
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .4rem;
+    overflow: hidden;
+}
+
+.section__products{
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+    vertical-align: middle;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #d5d1defe;
+}
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+tbody tr:hover{
+    background-color: #fff6;
+}
+
+@media (max-width: 1000px) {
+    td:not(:firdt-of-type) {
+        min-width: 12.1rem;
+    }
+}
